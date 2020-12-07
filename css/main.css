@@ -1,0 +1,191 @@
+/* ----STYLESHEET FOR Jacque's Portfolio ----*/
+
+/* ---- BASE STYLES ---- */
+body {
+   background-color: #1f202b;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 24px;
+  }
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+  
+ /* ---- GRID STYLES ---- */
+.half-width {
+   float: left;
+   height: 500px;
+   margin: 40px 60px 80px 40px;
+   padding: 30px;
+   width: 40%;
+ }
+
+ /*===== HEADER =====*/
+header {
+   height: 75px;
+   width: 100%;
+  }
+ header h1 {
+    float: left;
+   font-size: 30px;
+   color: #ffffff;
+   padding: 10px;
+   margin: 10px;
+   width: 500px;
+  }
+  h1 span {
+     color: green;
+  }
+nav {
+   float: right;
+   padding: 10px;
+   margin: 2px;
+   width: 800px;
+  }
+ nav ul {  
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   text-align: right;
+  }
+ nav ul li{
+   display: inline;
+   padding: 5px;
+   }
+ nav ul li a {
+   color: #ffffff ;
+   font-size: 20px;
+   margin-right: 10px;
+   padding-left: 10px;
+   text-decoration: none;
+  }
+ 
+ /*===== MAIN =====*/
+ .hero-image {
+   height: 750px;
+   background: url('../img/hero.jpg');
+   background-size: cover;
+   background-position: right;
+   padding-top: 50px;
+  }
+ main h2 {
+   clear: both;
+   color: #ffffff;
+   float: left;
+   font-family: 'Source Code Pro', monospace;
+   font-size: 72px;
+   margin: 280px 10px 100px 10px;
+   padding: 20px;
+   text-align: left;
+  }
+ main h2 span {
+   color: #fa0075;
+  }
+  h3 {
+  clear: both;
+   font-size: 36px;
+   font-family: 'Source Code Pro', monospace;
+   letter-spacing: 0.1em;
+   height: 50px;
+   margin: 40px 150px 40px 0;
+   padding: 20px 0;
+   text-align: center;
+   width: ;
+ }
+h4 {  
+   clear: both;
+   display: inline-block;
+   font-weight: 700;
+ }
+h5 {
+   font-weight: 500;
+}
+
+h6 {
+   clear: both;
+   font-size: 18px;
+   height: 50px;
+   padding: 10px;
+   text-align: center;
+   width: 100%;
+   }
+ 
+ /*===== PORTFOLIO =====*/
+ #portfolio .half-width {
+    height: 500px;
+}
+#portfolio img {
+   border: 1px;
+   border-color: #b7b7b7;
+   float: left;
+   height: 500px;
+   width: 600px;
+}
+#portfolio p {
+   margin-top: 20px;
+}
+#portfolio .align {
+   text-align: right;
+}
+
+/*===== ABOUT =====*/
+#about .full-width {
+   text-align: center;
+   height: 100px;
+   margin-left: 320px;
+   padding-top: 10px;
+}
+#about {
+   background-image: url('../img/about-me.png');
+   background-size: cover;
+   background-position: center;
+   box-sizing: content-box;
+   clear: both;
+   height: 550px;
+}
+#about p {
+   color: green;
+   height: 800px;
+   text-align: left;
+   margin: 10px;
+   padding: 10px;
+   width: 80%;
+}
+#about img {
+   border: 10px outset silver;
+   float: right;
+   height: 225px;
+   margin: 10px 50px 10px 10px;
+   padding: 10px;
+   width: 225px;
+}
+
+/*===== FOOTER/CONTACT =====*/
+#contact {
+   color: black;
+   font-weight: 700;
+   text-align: center;
+   height: 700px;
+  
+}
+#contact p {
+   margin: 20px;
+   width: 25%;
+
+}
+
+#contact {
+   background-image: url('../img/bulb.jpg');
+   background-size: cover;
+   background-position: center;
+   box-sizing: ;
+   height: 650px;
+   padding: 20px 100px;
+   
+}
+
+
+
