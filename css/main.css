@@ -27,15 +27,19 @@ html {
    text-decoration: none;
   }
 
-  h1 {
-     font-size: 2rem;
-     font-weight: 700px;
-     margin: 0;
+  h3 {
+     font-size: 1.25rem;
   }
 
   p {
      font-size: 1rem;
-     line-height: 1.25rem;
+     line-height: 1.75rem;
+  }
+
+  img {
+     width: 60%;
+     margin: 1rem;
+
   }
 
   .content-wrapper {
@@ -67,12 +71,16 @@ header .content-wrapper {
 .header-divider {
    background-color: #3a3a3a; 
    height: 2px;
-   margin: .5rem 0 1.25rem 0;
+   margin: .5rem 0 .75rem 0;
    width: 100%;
 }
 
+h1 span {
+   color: green;
+}
+
 header nav {
-   font-size: 1.125rem;
+   font-size: 1.25rem;
    font-weight: 700;
    text-transform: uppercase;
    display: flex;
@@ -89,8 +97,10 @@ header nav ul {
 }
 
 footer {
-   flex-direction: column;
+   display: flex;
+   flex-flow: row wrap;
    text-align: center;
+   justify-content: center;
 }
 
 footer p {
@@ -99,18 +109,62 @@ footer p {
 
 footer .content-wrapper {
    width: 55%;
-   margin: 50px 0;
+   margin: 3rem 0;
 }
 
 footer .contact {
-   margin-bottom: 50px;
+   margin-bottom: 1rem;
 }
 
 footer .copyright {
-   margin: 20px 0;
+   margin: 1.25rem 0;
 }
 
 /* --------------------- Mobile Styles - Homepage -------------------- */
+
+h1 {
+   font-size: 2rem;
+   font-weight: 700px;
+   margin: 0;
+}
+
+header nav ul {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+h3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+p {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+.hero-image {
+  background: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.about .about-items {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+}
+
+
+
 
 
 
@@ -120,9 +174,7 @@ footer .copyright {
    padding: 1.25rem;
    margin: .5rem;
   }
-  h1 span {
-     color: green;
-  }
+  
 nav {
    padding: 10px;
    margin: 2px;
