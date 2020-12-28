@@ -41,7 +41,7 @@
   }
 
   .top a {
-   background-color:  #2b7c03;
+   background-color: #67be3b;
    color: white;
  }
 
@@ -65,12 +65,8 @@
       width: 100%;
    }
 
-   header {
-      padding: .75rem 0;
-   }
-
    h1 span {
-      color: #2b7c03;
+      color: #67be3b;
    }
 
    h1 {
@@ -130,10 +126,11 @@
    } 
 
 
-
-/* --------------------- Mobile Styles - Homepage -------------------- */
+/* --------------------- Mobile Styles - Homepage ------------------- */
 
 header .content-wrapper {
+   display: flex;
+   flex-flow: column wrap;
    margin: 0;
    width: 100%;
    }
@@ -149,14 +146,16 @@ header .content-wrapper {
       display: flex;
       flex-flow: column wrap;
       width: 100%;
+      margin-bottom: .5rem;
    }
 
    a {
+      font-size: 1rem;
       display: flex;
       justify-content: center;
       align-content: center;
+      color: white;
    }
-
 
    .hero-image {
       background: url('../img/hero.jpg');
@@ -166,12 +165,34 @@ header .content-wrapper {
       display: flex;
       justify-content: center;
    }
- 
-   h2 {
+
+   .content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      align-items: center;
+   }
+
+   .about-us h2 {
       font-size: 1rem;
       font-weight: 700;
       margin-top: 1rem;
       padding: 1rem .4rem 0;
+   }
+
+   .about-us h4 {
+      text-align: center;
+      margin: .5rem 0;
+   }
+
+   .about-us p {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.5rem;
+      width: 90%;
+      margin: .5rem 0;
    }
 
    .content-wrapper .about-items {
@@ -181,18 +202,18 @@ header .content-wrapper {
       align-items: center;
    }
 
-   p {
+   .about-items p {
       line-height: 1.5rem;
       width: 90%;
    }
 
-   img {
+   .about-items img {
       width: 70%;
       margin: 1rem;
    }
 
    .footer-content img {
-      width: 35%;
+      width: 45%;
    }
 
 /* ==========================================================================
@@ -219,14 +240,14 @@ header .content-wrapper {
    }
 
    .services h3 {
-      color:#2b7c03;
+      color:#67be3b;
       text-align: left;
       margin-bottom: 2rem;
       width: 90%;
    }
 
    .services-content h4 {
-      color:#2b7c03;
+      color: #67be3b;
       margin: 1px 0;
       font-weight: 700;
    }
@@ -281,7 +302,36 @@ header .content-wrapper {
       min-height: 650px;
     }
 
-   .about-us .content-wrapper {
+    .content-wrapper {
+       display: flex;
+       flex-flow: row wrap;
+
+  
+   }
+
+   /*.about-us h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      padding: 1rem .4rem 0;
+   }
+
+   .about-us h4 {
+      text-align: center;
+      margin: .5rem 0;
+   }
+
+   .about-us p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.5rem;
+      width: 90%;
+      margin: .5rem 0;
+   }*/
+
+
+   .content-wrapper {
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
@@ -289,21 +339,17 @@ header .content-wrapper {
    }
 
    .about-items {
+      display: flex;
       width: 50%;
    }
 
-   p {
+   .about-items p {
       line-height: 1.5rem;
    }
 
-   img {
+   .about-items img {
       margin: 1rem;
    }
-
-   .light img {
-      height: 260px;
-      }
-
 
    /* ==========================================================================
    Services Page
@@ -346,7 +392,6 @@ header .content-wrapper {
 
 
 }
-   
 
 /* --------------------- Desktop Styles - Homepage -------------------- */
 
@@ -356,12 +401,8 @@ header .content-wrapper {
       /* General Styles */ 
 
    h1 {
-      font-size: 2rem;
-   }
-
-   h2 {
       font-size: 1.75rem;
-      }
+   }
 
    header .content-wrapper {
       display: flex;
@@ -385,10 +426,6 @@ header .content-wrapper {
       font-size: 1.15rem;
    }
 
-   p {
-      font-size: 1.25rem;
-      }
-      
    .hero-image {
          min-height: 650px;
          padding: 30rem 0;
@@ -404,14 +441,51 @@ header .content-wrapper {
 
       .about-us .content-wrapper {
          display: flex;
-         justify-content: space-evenly;
+         justify-content: center;
          flex-flow: row wrap;
          align-items: center;
       }
 
       .about-us h2 {
+         font-size: 1.5rem;
          padding: 1.75rem 0;
       }
+
+      .about-us h4 {
+         font-size: 1.25rem;
+      }
+
+      .about-us p {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.15rem;
+         width: 75%;
+      }
+
+      .content-wrapper .about-items {
+         display: flex;
+         justify-content: space-between;
+         flex-flow: row wrap;
+         align-items: center;
+         width: 25%;
+      }
+   
+      .about-items {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between;
+         align-items: center;
+      }
+   
+      .about-items p {
+         line-height: 1.5rem;
+      }
+   
+      .about-items img {
+         margin: 1rem;
+      }
+   
    
       .about-items {
          width: 25%;
@@ -435,71 +509,41 @@ header .content-wrapper {
 
    }
 
-   /* ==========================================================================
-   Services Page
-   ========================================================================== */
-
-   header .services-page {
-      margin: 2% 0;
-   }
-
-   header .services-page nav ul {
-      padding-left: 40%;
-   }
 
 
-   .services-page h1 {
-      margin: 0;
-      padding: 0;
-   }
-
-   .content-wrapper .services-page {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      
-   }
-
-   .services .content-wrapper h3 {
-      width: 50%;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .services .content-wrapper .services-content {
-   }
-
-   .services-content h4 {
-      margin-bottom: -30%;
-      font-weight: 700;
-   }
 
    .services .content-wrapper {
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
-      align-items: center;
-      margin: .5rem 0;
+      align-items: flex-start;
+      
    }
 
-   .services-content {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      width: 100%;
-   }
 
    .services h3 {
-      text-align: left;
-      margin-bottom: 2rem;
-      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
 
    .services-content h4 {
-      margin: 1px 0;
+      margin-bottom: -30%;
       font-weight: 700;
+    }
+
+    .services-content p {
+       justify-content: flex-start;
+
+    }
+
+
+    .faq-content ul {
+       list-style-type: circle outside none;
+    }
    }
-}
+
+   
    
 
 
