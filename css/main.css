@@ -125,6 +125,11 @@
       width: 100%;
    } 
 
+   .footer-content p {
+      line-height: 1.5rem;
+
+   }
+
 
 /* --------------------- Mobile Styles - Homepage ------------------- */
 
@@ -172,6 +177,13 @@ header .content-wrapper {
       flex-flow: column wrap;
       align-items: center;
    }
+
+   /*.content-wrapper .about-us {
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      align-items: center;
+   }*/
 
    .about-us h2 {
       font-size: 1rem;
@@ -252,6 +264,24 @@ header .content-wrapper {
       font-weight: 700;
    }
 
+   /* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+   .contact .content-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+   }
+
+   .contact h3 {
+      margin-bottom: 1rem;
+   }
+
+   .contact p {
+      text-align: center;
+      line-height: 1.5rem;
+   }
 
 
 /* --------------------- Tablet Styles - Homepage -------------------- */
@@ -301,34 +331,15 @@ header .content-wrapper {
    .hero-image {
       min-height: 650px;
     }
-
-    .content-wrapper {
-       display: flex;
-       flex-flow: row wrap;
-
-  
-   }
-
-   /*.about-us h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-top: 1rem;
-      padding: 1rem .4rem 0;
-   }
-
-   .about-us h4 {
-      text-align: center;
-      margin: .5rem 0;
-   }
-
-   .about-us p {
+    
+   #about .content-wrapper  {
       display: flex;
+      flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      line-height: 1.5rem;
-      width: 90%;
-      margin: .5rem 0;
-   }*/
+   }
+
+   
 
 
    .content-wrapper {
@@ -369,12 +380,12 @@ header .content-wrapper {
       padding: 0;
    }
 
-   .content-wrapper .services-page {
+   /*.content-wrapper .services-page {
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
+      flex-flow: row wrap;
+      justify-content: ;
       
-   }
+   }*/
 
    .services .content-wrapper h3 {
       width: 100%;
@@ -386,10 +397,20 @@ header .content-wrapper {
    }
 
    .services-content h4 {
-      margin-bottom: -30%;
+      margin-bottom: -.5%;
       font-weight: 700;
    }
 
+   /* ==========================================================================
+   Contact Page
+   ========================================================================== */
+
+   .contact form {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+
+   }
 
 }
 
@@ -510,9 +531,11 @@ header .content-wrapper {
    }
 
 
+/* ==========================================================================
+   Services Page
+   ========================================================================== */
 
-
-   .services .content-wrapper {
+   /*.services .content-wrapper {
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
@@ -538,9 +561,9 @@ header .content-wrapper {
     }
 
 
-    .faq-content ul {
+    ul .faq-content {
        list-style-type: circle outside none;
-    }
+    }*/
    }
 
    
