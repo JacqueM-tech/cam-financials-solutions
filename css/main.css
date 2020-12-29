@@ -45,6 +45,8 @@
    color: white;
  }
 
+ 
+
   /* ------------------ Base Header & Footer Styles ------------------ */
 
    header,
@@ -171,19 +173,12 @@ header .content-wrapper {
       justify-content: center;
    }
 
-   .content-wrapper {
+   .about .content-wrapper {
       display: flex;
       justify-content: center;
       flex-flow: column wrap;
       align-items: center;
    }
-
-   /*.content-wrapper .about-us {
-      display: flex;
-      justify-content: center;
-      flex-flow: column wrap;
-      align-items: center;
-   }*/
 
    .about-us h2 {
       font-size: 1rem;
@@ -265,6 +260,61 @@ header .content-wrapper {
    }
 
    /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+   .faq .content-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+   }
+
+   .faq-content {
+      width: 90%;
+   }
+
+   .faq h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #67be3b;
+   }
+
+   .faq h4 {
+      color: #67be3b;
+      margin-top: 2.5rem;
+   } 
+
+   .faq p {
+      line-height: 1.25rem;
+   }
+
+   .faq-content ul {
+      list-style-type: square;
+      list-style-position: outside;
+      padding-left: 2rem;
+   
+   }
+
+   .faq-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 1rem;
+   }
+
+   .grid-items {
+      display: flex;
+      justify-content: center;
+      border: 2px solid #67be3b;
+      padding: .5rem;
+      font-size: 1rem;
+      text-align: left;
+   }
+
+   .faq-grid .heading {
+      font-weight: 700;
+   }
+
+   /* ==========================================================================
    Contact Page
    ========================================================================== */
 
@@ -331,36 +381,25 @@ header .content-wrapper {
    .hero-image {
       min-height: 650px;
     }
-    
-   #about .content-wrapper  {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-   }
 
-   
-
-
-   .content-wrapper {
+   .content-wrapper .about-items {
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
       align-items: center;
    }
 
-   .about-items {
-      display: flex;
+   /*.about-items p {
+      line-height: 1.5rem;
       width: 50%;
    }
 
-   .about-items p {
-      line-height: 1.5rem;
-   }
-
    .about-items img {
+      width: 50%;
       margin: 1rem;
-   }
+   }*/
+    
+   
 
    /* ==========================================================================
    Services Page
@@ -564,7 +603,28 @@ header .content-wrapper {
     ul .faq-content {
        list-style-type: circle outside none;
     }*/
+   
+    * ==========================================================================
+    FAQ Page
+    ========================================================================== */
+    
+    .faq .content-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+   } 
+
+   .faq-content {
+      width: 75%;
    }
+
+   .faq-grid {
+      width: 55%;
+      margin-left: 20rem;
+   }
+
+
+}
 
    
    
